@@ -1,0 +1,14 @@
+<h1>result</h1>
+
+<a href="{% url 'home' %}">home</a>
+<br>
+<br>
+
+전체 : {{total}}
+
+<br>
+<br>
+단어 수 세기<br>
+{% for word, num in dic %}
+{{ word }} : {{ num }}개
+{% endfor %}
